@@ -22,7 +22,7 @@ spec:
       labels:
         app: myapp
     spec:
-      containers:
+containers:
         - name: my-app
           image: docker.io/onkarkulkarni545/my-app:7214c2fb87050e566282fd3a82f22c861c2ace1d
           ports:
@@ -34,3 +34,10 @@ spec:
             limits:
               cpu: 250m
               memory: 256Mi
+         readinessProbe:         
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            failureThreshold: 3
