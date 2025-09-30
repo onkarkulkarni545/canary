@@ -22,9 +22,9 @@ spec:
       labels:
         app: myapp
     spec:
-containers:
+      containers:
         - name: my-app
-          image: docker.io/onkarkulkarni545/my-app:5e2f6b975c7ad7d819c1eecbe1623e0409f84701
+          image: docker.io/onkarkulkarni545/my-app:b4ae014a939585f7542dd756a9eae2861b869acc
           ports:
             - containerPort: 80
           resources:
@@ -34,4 +34,3 @@ containers:
             limits:
               cpu: 250m
               memory: 256Mi
-          
