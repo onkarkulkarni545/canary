@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: docker.io/onkarkulkarni545/my-app:0fec67da0dc734399a160174827f8faf6ac56230
+          image: docker.io/onkarkulkarni545/my-app:fdb956a52b7aef10bc44dcf9d1f3051230b37672
           ports:
             - containerPort: 80
           resources:
